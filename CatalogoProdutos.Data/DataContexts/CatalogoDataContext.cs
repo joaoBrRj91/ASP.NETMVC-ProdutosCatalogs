@@ -7,7 +7,10 @@ namespace CatalogoProdutos.Data.DataContexts
     public class CatalogoDataContext : DbContext
     {
         public CatalogoDataContext() : base("CatalogoSqlServerDbContext")
-        {  }
+        {
+            this.Configuration.LazyLoadingEnabled = true;
+            this.Configuration.ProxyCreationEnabled = true;
+        }
 
         public DbSet<Usuario> Usuarios { get; set; }
 

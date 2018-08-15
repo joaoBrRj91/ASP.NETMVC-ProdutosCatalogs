@@ -5,8 +5,8 @@ namespace CatalogoProdutos.Domain.Repositories
 {
     public interface IRepository<T> : IDisposable
     {
-        IList<T> ObterDados();
-        T ObterDado();
+        IEnumerable<T> ObterDados();
+        T ObterDado(int id);
         void SalvarOuAtualizar(T entity);
         void Deletar(int id);
     }
