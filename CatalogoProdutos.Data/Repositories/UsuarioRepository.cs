@@ -46,17 +46,20 @@ namespace CatalogoProdutos.Data.Repositories
                 catalogocontext.Entry<Usuario>(entity).State = EntityState.Modified;
 
             catalogocontext.SaveChanges();
+            Dispose();
             
         }
 
         public void Deletar(int id)
         {
             catalogocontext.Usuarios.Remove(catalogocontext.Usuarios.Find(id));
+            Dispose();
         }
 
         public void Dispose()
         {
-            catalogocontext = null;
+            if (catalogocontext != null)
+                catalogocontext = null;
         }
 
     }
