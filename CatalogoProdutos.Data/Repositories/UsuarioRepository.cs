@@ -58,8 +58,7 @@ namespace CatalogoProdutos.Data.Repositories
 
         public void Dispose()
         {
-            if (catalogocontext != null)
-                catalogocontext = null;
+            catalogocontext.Dispose();
         }
 
     }

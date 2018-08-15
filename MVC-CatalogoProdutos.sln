@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoProdutos.Data", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoProdutos.Localhost.Tests", "CatalogoProdutos.Localhost.Tests\CatalogoProdutos.Localhost.Tests.csproj", "{5BD084DD-FF90-480E-A49D-289AE02A4268}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoProdutos.Web", "CatalogoProdutos.Web\CatalogoProdutos.Web.csproj", "{85D87DDA-A3D1-45F4-8D59-F6F11EC341BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoProdutos.Application", "CatalogoProdutos.Application\CatalogoProdutos.Application.csproj", "{F5075B58-C909-49DE-B4A9-C8C8836E5977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{5BD084DD-FF90-480E-A49D-289AE02A4268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BD084DD-FF90-480E-A49D-289AE02A4268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BD084DD-FF90-480E-A49D-289AE02A4268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85D87DDA-A3D1-45F4-8D59-F6F11EC341BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D87DDA-A3D1-45F4-8D59-F6F11EC341BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D87DDA-A3D1-45F4-8D59-F6F11EC341BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D87DDA-A3D1-45F4-8D59-F6F11EC341BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5075B58-C909-49DE-B4A9-C8C8836E5977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5075B58-C909-49DE-B4A9-C8C8836E5977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5075B58-C909-49DE-B4A9-C8C8836E5977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5075B58-C909-49DE-B4A9-C8C8836E5977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
