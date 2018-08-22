@@ -53,7 +53,6 @@ namespace CatalogoProdutos.Domain
             Email = email;
         }
 
-
         public void AlterarSenha(string usuarioAcesso, string senha, string novaSenha,string confirmacaoSenha)
         {
             //TODO: Fazer um cenario de teste para cada if : METODO AlterarSenha
@@ -78,12 +77,12 @@ namespace CatalogoProdutos.Domain
                 throw new System.InvalidOperationException("Usuário ou senha incorretos");
         }
 
-        public void Registrar(string nome, string email, string usuarioAcesso, string senha, string confirmacaoSenha)
+        public void Registrar(/*string nome, */string email, string usuarioAcesso, string senha, string confirmacaoSenha)
         {
 
             //TODO: Fazer um cenario de teste para cada if: METODO Registrar
-            if (nome.Length < 3)
-                throw new System.InvalidCastException("O nome deve ser no minimo 3 caracteres");
+            //if (nome.Length < 3)
+            //    throw new System.InvalidCastException("O nome deve ser no minimo 3 caracteres");
 
             if (!Regex.IsMatch(email, @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"))
                 throw new System.InvalidCastException("O email deve ser valido");
@@ -91,8 +90,8 @@ namespace CatalogoProdutos.Domain
             if (usuarioAcesso.Length < 8)
                 throw new System.InvalidCastException("O usuário de acesso deve ser no minimo 8 caracteres");
 
-            if (senha.Length < 6)
-                throw new System.InvalidCastException("A senha deve ser no minimo 6 caracteres");
+            //if (senha.Length < 6)
+            //    throw new System.InvalidCastException("A senha deve ser no minimo 6 caracteres");
 
             if (!senha.Equals(confirmacaoSenha))
                 throw new System.InvalidCastException("As senhas digitadas não coincidem");

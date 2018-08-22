@@ -38,7 +38,7 @@ namespace CatalogoProdutos.Data.Mappings
               .HasColumnAnnotation(
                      "Index",
                       new IndexAnnotation(
-                           new IndexAttribute("IX_USUARIO_EMAIL")
+                           new IndexAttribute("IX_USUARIO_ACESSO")
                            {
                                IsUnique = true
                            }));

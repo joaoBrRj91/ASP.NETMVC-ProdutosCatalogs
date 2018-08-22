@@ -3,6 +3,7 @@ using System.Web.Optimization;
 
 namespace CatalogoProdutos.Web
 {
+
     public class BundleConfig
     {
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
