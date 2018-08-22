@@ -210,6 +210,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CatalogoProdutos.Data\CatalogoProdutos.Data.csproj">
+      <Project>{d7798ffd-7bde-4142-8fcb-89003190d047}</Project>
+      <Name>CatalogoProdutos.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CatalogoProdutos.Domain\CatalogoProdutos.Domain.csproj">
+      <Project>{507ae28c-52cf-4a50-a8b4-64271e519d19}</Project>
+      <Name>CatalogoProdutos.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
